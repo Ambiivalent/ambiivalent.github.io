@@ -2,7 +2,7 @@ body {
     background-color: #21201f;
 }
 
-ul
+nav ul
 {
     list-style-type: none;
     margin: 0px;
@@ -14,17 +14,21 @@ ul
     text-align: center;
     font-family: Monaco, monospace;
 }
-li{
+nav li{
 
     display:inline-block;
     align-items: center;
 }
-li a {
+nav li a {
     display:block;
     color: aliceblue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+nav li a:hover{
+    color: lightblue;
 }
 
 .div_img{
@@ -63,4 +67,41 @@ li a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15%;
+}
+
+
+.info_p{
+    text-align: center;
+    padding: 3%;
+}
+
+.info_box
+{
+    font-family: Monaco, monospace;
+    color:aliceblue;
+    font-size: 25px;
+    padding-bottom: 10%;
+
+}
+
+.info_box li{
+    text-align: center;
+}
+.info_box h2{
+    padding-top: 1%;
+    text-align: center;
+    color: lightgreen;
+    font-size: 35px;
+}
+
+.info_box h1{
+    text-align: center;
+    font-size: 70px;
+    padding: 20%;
+    padding-bottom: 35%;
+
+}
+
+.info_box_li{
+    list-style-type: none;
 }

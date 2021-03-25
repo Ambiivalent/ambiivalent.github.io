@@ -1,5 +1,9 @@
 body {
     background-color: #21201f;
+    font-size: 25px;
+    font-family: Monaco, monospace;
+    color: aliceblue;
+    text-align: center;
 }
 
 nav ul
@@ -12,7 +16,6 @@ nav ul
     bottom:0;
     width:100%;
     text-align: center;
-    font-family: Monaco, monospace;
 }
 nav li{
 
@@ -25,8 +28,8 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 16px;
 }
-
 nav li a:hover{
     color: lightblue;
 }
@@ -38,7 +41,6 @@ nav li a:hover{
 
 .text{
     text-align: center;
-    font-family: Monaco, monospace;
     margin-top: 15%;
     float: left;
     color:aliceblue;
@@ -77,9 +79,7 @@ nav li a:hover{
 
 .info_box
 {
-    font-family: Monaco, monospace;
     color:aliceblue;
-    font-size: 25px;
     padding-bottom: 10%;
 
 }
@@ -93,6 +93,10 @@ nav li a:hover{
     color: lightgreen;
     font-size: 35px;
 }
+.info_box hr{
+    border: 1px dashed lightgreen;
+    width: 50%;
+}
 
 .info_box h1{
     text-align: center;
@@ -104,4 +108,65 @@ nav li a:hover{
 
 .info_box_li{
     list-style-type: none;
+}
+
+.project{
+    text-align: center;
+    width: 50%;
+    border: 5px solid lightgreen;
+    margin-left: auto;
+    padding: 0% 3% 2%;
+    margin-right: auto;
+    margin-bottom: 5%;
+    overflow: auto;
+}
+
+.project_text{
+    color: white;
+    float:left;
+    text-align: left;
+}
+.project h1{ color:rgb(142, 253, 184)}
+.project_img{
+    width:35%;
+    height: 70%;
+    float:right;    
+    border: 2px groove black;
+}
+.footnote{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.footnote a{
+    color:rgb(47, 189, 101);
+    text-decoration: none;
+}
+.footnote a:hover{
+    color:rgb(41, 216, 108);
+}
+.footnote hr{
+    width: 50%;
+    border: 1px dashed rgb(47, 189, 101);
+}
+
+.contact{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    overflow: hidden;
+    
+}
+
+h1.contact{
+    color: rgb(41, 216, 108);
+    padding-bottom: 2%;
+}
+
+.contact p{
+    line-height: 50px;
+}
+.contact img{
+    float:left;
+    padding-bottom: 5%;
 }

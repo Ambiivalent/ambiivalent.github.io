@@ -6,6 +6,12 @@ body {
     text-align: center;
 }
 
+a
+{
+    list-style-type: none;
+    color:lightgreen;
+}
+
 nav ul
 {
     list-style-type: none;
@@ -169,4 +175,9 @@ h1.contact{
 .contact img{
     float:left;
     padding-bottom: 5%;
+}
+
+canvas{
+    background-color: aliceblue;
+    border: 2px dotted black;
 }

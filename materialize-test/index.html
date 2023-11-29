@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts.js"></script>
+    <style>
+        body {
+            background-color: #4a148c;
+            text-align: center;
+        }
+        .flex {
+            display: flex;
+        }
+    </style>
+    <title>Materialize Test Site</title>
+</head>
+<body>
+    <div id="main" class="card-panel purple darken-3">
+        <div class="card-panel purple purple-text text-lighten-4"> 
+            <h1> CPS530 - Lab 10 Part C </h1>
+            <h1> By: Brian Hoang </h1>
+            <h2> Chosen Framework: Materialize CSS</h2>
+        </div>
+
+        <div class="flex row purple-text text-lighten-4">
+            <div class="card-panel purple darken-1 col s3">
+            <!-- Sidebar -->
+                <h2>Materialize Features</h2>
+                <h3> Text Counter </h3>
+                <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6 offset-s3">
+                          <textarea id="live-char" class="materialize-textarea" onkeyup="getChar()"></textarea>
+                          <label for="live-char">Enter Some Text: </label>
+                        </div>
+                      </div>
+                    </form>
+                    <p> Number of Characters: <span id="numChar"></span></p>
+                  </div>
+                <h3> Date and Time Pickers </h3>
+                <div class="row">
+                    <form class="col s12">
+                    <input type="text" class="datepicker col s6 offset-s3">
+                    <input type="text" class="timepicker col s6 offset-s3">
+                    </form>
+                </div><br>
+
+                <h3> Other Labs </h3>
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Click Me!</a>
+                <p style="visibility: hidden;"></p>
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="https://www.cs.torontomu.ca/~b22hoang/lab_01/lab01.html">Lab 1</a></li>
+                    <li><a href="https://www.cs.torontomu.ca/~b22hoang/lab_02/lab02.html">Lab 2</a></li>
+                    <li><a href="https://www.cs.torontomu.ca/~b22hoang/lab_03/lab03.html">Lab 3</a></li>
+                    <li><a href="https://www.cs.torontomu.ca/~b22hoang/lab_04/lab04.html">Lab 4</a></li>
+                    <li><a href="https://www.cs.torontomu.ca/~b22hoang/lab_05/lab05.html">Lab 5</a></li>
+                    <li><a href="https://cs.torontomu.ca/~b22hoang/lab_06/lab06.html">Lab 6</a></li>
+                    <li><a href="https://www2.cs.torontomu.ca/~b22hoang/lab07b.html">Lab 7</a></li>
+                    <li><a href="https://www.cs.torontomu.ca/~b22hoang/lab_08/lab08.php">Lab 8</a></li>
+                    <li><a href="https://webdev.cs.torontomu.ca/~b22hoang/lab09b.php">Lab 9</a></li>
+
+                </ul>
+            </div>
+
+            <div class="card-panel purple darken-2 col s9">
+            <!--Bigbar-->
+                <h2>Summary</h2>
+                <p>For this lab, I will be deploying and showing off the Materialize Framework, aimed at creating a unified user experience with CSS and JS.</p>
+
+                <h3>Setup</h3>
+                <p>Materialize was very simple to setup, only requiring two CDN lines listed below:</p>
+                <div class="row">
+                    <div class="col s6 offset-s3 card-panel red darken-3">
+                        <div class="card-content red-text text-lighten-4">
+                            <span class="card-title red-text text-lighten-5">Required Imports</span>
+                            <p>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"&gt;&lt;/script&gt; </p>
+                            <p>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"&gt;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>The benefit to using materialize, is that it allows me to quickly create aesthetically pleasing, responsive and standardized CSS styles, all in a few class definitions;
+                    making materialize very fast to get started. <br>
+                I found that I could quickly build the current layout with little to no issues after navigating the <a href="https://materializecss.com/getting-started.html">documentation</a> provided by materialize.<br>
+                Materialize lets me use fluid grid based classification, much like bootstrap but having the benefit of being more readable, in my opinion. <br>
+                I also found appreciation in the provided colour chart from materialize, allowing me to pick complimenting colours quickly and efficiently.</p>
+
+                <h3> Issues </h3>
+                <p>Some issues I initially encountered, is with the design of the language being very &lt;div&gt; heavy. It is very easy to get lost in this HTML code when working in Materialize.
+                    <br> I also encountered some wrapping issues when trying to add text to certain classes. They were swiftly resolved due to easily accessible documentation.
+                    There were also issues in regards to javascript function loading. M.AutoInit(); was a mandatory js function not immedietely apparent - which caused some confusion.<br>  
+                    <br> On the sidebar, I have listed some of Materialize's featuers - which are highly focused on stylizing with both CSS and JS.
+                </p>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p class="page-footer white-text purple">Created by Brian Hoang. 2024.
+            Contact: brian.hoang@torontomu.ca </p>
+        </footer>
+</body>
+</html>

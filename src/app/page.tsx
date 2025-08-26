@@ -170,8 +170,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="grid grid-cols-2 lg:grid-cols-3 w-9/10 place-self-center p-10 xl:w-6/10 place-items-start">
-        <aside className="sticky top-10 col-span-1 h-auto w-full">
+      <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 w-9/10 place-self-center p-10 xl:w-7/10 2xl:w-6/10 place-items-start ">
+        <aside className="static lg:sticky top-10 col-span-1 h-auto w-full place-items-center lg:place-items-start">
           {/* Profile */}
           <div className="">
             {/* Info */}
@@ -201,9 +201,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pt-5 pl-5">
+          <div className="hidden lg:inline pt-5 pl-5">
             {/* Headings */}
-            <div className="italic inline-block text-left">
+            <div className="italic inline-block text-left pt-5">
               {
                 headings.map((t) => (
                   <a href={`#${t.toLowerCase()}`} key={t}>
@@ -216,8 +216,21 @@ export default function Home() {
 
         </aside>
 
+        {/* Only show these headings on mobile view */}
+        <div className="lg:hidden self-center w-9/10 pt-5">
+            {/* Headings */}
+            <div className="italic text-center md:text-right md:justify-self-end">
+              {
+                headings.map((t) => (
+                  <a href={`#${t.toLowerCase()}`} key={t}>
+                    <h1 className="mb-1 transition-[font-size] duration-300 ease-in-out hover:text-xl clickable">{t}</h1>
+                  </a>
+                ))
+              }
+            </div>
+        </div>
 
-        <section className="flex flex-col gap-2 col-span-2 place-content-center p-5">
+        <section className="flex flex-col gap-2 col-span-2 place-content-center lg:p-5">
           
           {/* Article Content */}
           {

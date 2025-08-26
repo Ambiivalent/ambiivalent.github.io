@@ -3,12 +3,12 @@ import { Anaheim, VT323 } from "next/font/google";
 import ThemeSetter from "./ThemeSetter/page";
 import "./globals.css";
 
-
+/*
 const anaheimFont = Anaheim({
   variable: "--font-anaheim",
   subsets: ["latin"]
 })
-
+*/
 const VT323Font = VT323({
   weight: "400",
   variable: "--font-vt323",

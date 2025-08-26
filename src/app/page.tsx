@@ -137,7 +137,7 @@ export default function Home() {
                 Discord bot developed in JavaScript featuring server moderation control, voice channel music player and interactive commands for users. <br></br>
                 Leverages Puppeteer for web scraping related commands and opus codec for audio manipulation.<br></br>
                 <br></br>
-                Built for a private Discord server with commands specific to the server and it's community.
+                Built for a private Discord server with commands specific to the server.
               </div>
             </div>
           </AccordionContent>
@@ -149,7 +149,7 @@ export default function Home() {
     contact:(
       <div className="">
         <p>
-          Hi. Let's get in touch. <br></br>
+          Hi. Let&apos;s get in touch. <br></br>
           Mail: <a href={`mailto:${info.email}`} className="text-neutral-500 underline">[{info.email}]</a> <br></br>
           LinkedIn: <a href={info.linkedIn} target="blank" className="text-neutral-500 underline">[LinkedIn]</a> <br></br>
           GitHub: <a href={info.github} target="blank" className="text-neutral-500 underline">[GitHub]</a>

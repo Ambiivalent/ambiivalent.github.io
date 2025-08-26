@@ -1,7 +1,7 @@
 'use client'
 
 import React from "react"
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 import { Moon, MoonFilled } from "../ui/icons"
 
 
@@ -16,7 +16,7 @@ const changeTheme = () => {
     document.documentElement.classList.add("dark")
   }
 }
-export default function themeSetter() {
+export default function ThemeSetter() {
 
     useEffect(() => {
         // Get current theme from localStorage

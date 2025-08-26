@@ -1,11 +1,10 @@
-import { HTMLProps, ReactNode } from "react";
+import { ReactNode } from "react";
 
 type WindowTypes = {
-    color?: string,
     heading: string,
     children: ReactNode,
 }
-export default function Window({heading, color, children}:WindowTypes) {
+export default function Window({heading, children}:WindowTypes) {
     return (
         <>
 
